@@ -1,0 +1,49 @@
+﻿@model JobApplication
+
+@{
+    ViewData["Title"] = "Edit Job Application";
+}
+
+<h2>Edit Job Application</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    @* Reuse the fields from Create.cshtml *@
+    <div class="form-group">
+        <label for="CompanyName">Company Name</label>
+        <input asp-for="CompanyName" class="form-control" />
+        <span asp-validation-for="CompanyName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="JobTitle">Job Title</label>
+        <input asp-for="JobTitle" class="form-control" />
+        <span asp-validation-for="JobTitle" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="ApplicationDate">Application Date</label>
+        <input asp-for="ApplicationDate" class="form-control" type="date" />
+        <span asp-validation-for="ApplicationDate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="Status">Status</label>
+        <select asp-for="Status" class="form-control">
+            <option>Applied</option>
+            <option>Interviewing</option>
+            <option>Accepted</option>
+            <option>Rejected</option>
+        </select>
+        <span asp-validation-for="Status" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="JobLink">Job Posting Link</label>
+        <input asp-for="JobLink" class="form-control" />
+        <span asp-validation-for="JobLink" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="Notes">Notes</label>
+        <textarea asp-for="Notes" class="form-control"></textarea>
+        <span asp-validation-for="Notes" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

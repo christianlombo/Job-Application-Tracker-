@@ -1,0 +1,57 @@
+﻿@model IEnumerable<JobApplication>
+
+@{
+    ViewData["Title"] = "My Job Applications";
+}
+
+<h2>My Job Applications</h2>
+
+<form method="get" class="mb-3">
+    <div class="form-row">
+        <div class="col">
+            <input type="text" name="search" class="form-control" placeholder="Search by Company or Title" />
+        </div>
+        <div class="col">
+            <select name="status" class="form-control">
+                <option value="">Filter by Status</option>
+                <option>Applied</option>
+                <option>Interviewing</option>
+                <option>Accepted</option>
+                <option>Rejected</option>
+            </select>
+        </div>
+        <div class="col">
+            <button type="submit" class="btn btn-primary">Filter</button>
+        </div>
+    </div>
+</form>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Company</th>
+            <th>Job Title</th>
+            <th>Application Date</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var app in Model)
+        {
+            <tr>
+                <td>@app.CompanyName</td>
+                <td>@app.JobTitle</td>
+                <td>@app.ApplicationDate.ToShortDateString()</td>
+                <td>@app.Status</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@app.Id" class="btn btn-primary btn-sm">Edit</a>
+                    <a asp-action="Details" asp-route-id="@app.Id" class="btn btn-info btn-sm">Details</a>
+                    <a asp-action="Delete" asp-route-id="@app.Id" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-success">Add New Application</a>

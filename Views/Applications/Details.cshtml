@@ -1,0 +1,36 @@
+﻿@model JobApplication
+
+@{
+    ViewData["Title"] = "Application Details";
+}
+
+<h2>Application Details</h2>
+
+<table class="table">
+    <tr>
+        <th>Company Name</th>
+        <td>@Model.CompanyName</td>
+    </tr>
+    <tr>
+        <th>Job Title</th>
+        <td>@Model.JobTitle</td>
+    </tr>
+    <tr>
+        <th>Application Date</th>
+        <td>@Model.ApplicationDate.ToShortDateString()</td>
+    </tr>
+    <tr>
+        <th>Status</th>
+        <td>@Model.Status</td>
+    </tr>
+    <tr>
+        <th>Job Link</th>
+        <td><a href="@Model.JobLink" target="_blank">@Model.JobLink</a></td>
+    </tr>
+    <tr>
+        <th>Notes</th>
+        <td>@Model.Notes</td>
+    </tr>
+</table>
+
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>

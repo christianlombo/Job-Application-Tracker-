@@ -1,0 +1,16 @@
+﻿@model dynamic
+
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<h2>Dashboard</h2>
+
+<div>
+    <p><strong>Total Applications:</strong> @Model.TotalApplications</p>
+    <p><strong>Accepted:</strong> @Model.Accepted</p>
+    <p><strong>Rejected:</strong> @Model.Rejected</p>
+    <p><strong>Interviewing:</strong> @Model.Interviewing</p>
+    <p><strong>Applied:</strong> @Model.Applied</p>
+</div>
+<a asp-action="Index" class="btn btn-primary">View All Applications</a>

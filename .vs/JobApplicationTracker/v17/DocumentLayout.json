@@ -1,0 +1,300 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|c:\\users\\dell\\source\\repos\\jobapplicationtracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|c:\\users\\dell\\source\\repos\\jobapplicationtracker\\views\\applications\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|solutionrelative:views\\applications\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|c:\\users\\dell\\source\\repos\\jobapplicationtracker\\models\\jobapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|solutionrelative:models\\jobapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|c:\\users\\dell\\source\\repos\\jobapplicationtracker\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|solutionrelative:models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|c:\\users\\dell\\source\\repos\\jobapplicationtracker\\controllers\\applicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|solutionrelative:controllers\\applicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|c:\\users\\dell\\source\\repos\\jobapplicationtracker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|c:\\users\\dell\\source\\repos\\jobapplicationtracker\\migrations\\20241227230655_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|solutionrelative:migrations\\20241227230655_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|c:\\users\\dell\\source\\repos\\jobapplicationtracker\\jobapplicationtracker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|solutionrelative:jobapplicationtracker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|c:\\users\\dell\\source\\repos\\jobapplicationtracker\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|c:\\users\\dell\\source\\repos\\jobapplicationtracker\\views\\applications\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|solutionrelative:views\\applications\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|c:\\users\\dell\\source\\repos\\jobapplicationtracker\\views\\applications\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|solutionrelative:views\\applications\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|c:\\users\\dell\\source\\repos\\jobapplicationtracker\\views\\applications\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|solutionrelative:views\\applications\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|c:\\users\\dell\\source\\repos\\jobapplicationtracker\\views\\applications\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|solutionrelative:views\\applications\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|c:\\users\\dell\\source\\repos\\jobapplicationtracker\\views\\applications\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|solutionrelative:views\\applications\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|c:\\users\\dell\\source\\repos\\jobapplicationtracker\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|c:\\users\\dell\\source\\repos\\jobapplicationtracker\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40D6CDB3-107A-4889-A9F1-2E02E5FBE579}|JobApplicationTracker.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-27T22:46:53.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationsController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\Controllers\\ApplicationsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ApplicationsController.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\Controllers\\ApplicationsController.cs",
+              "RelativeToolTip": "Controllers\\ApplicationsController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAcwCkAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T22:32:19.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "Models\\ApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T22:17:04.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\Views\\Applications\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Applications\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\Views\\Applications\\Create.cshtml",
+              "RelativeToolTip": "Views\\Applications\\Create.cshtml",
+              "ViewState": "AQIAABoAAAAAAAAAAAAgwDUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-27T22:42:31.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "JobApplication.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\Models\\JobApplication.cs",
+              "RelativeDocumentMoniker": "Models\\JobApplication.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\Models\\JobApplication.cs",
+              "RelativeToolTip": "Models\\JobApplication.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABkAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T22:17:25.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAgwBkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T22:46:57.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20241227230655_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\Migrations\\20241227230655_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241227230655_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\Migrations\\20241227230655_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\20241227230655_InitialCreate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T23:06:56.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "JobApplicationTracker",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\JobApplicationTracker.csproj",
+              "RelativeDocumentMoniker": "JobApplicationTracker.csproj",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\JobApplicationTracker.csproj",
+              "RelativeToolTip": "JobApplicationTracker.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-27T23:02:20.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-27T22:43:24.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\Views\\Applications\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Views\\Applications\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\Views\\Applications\\Dashboard.cshtml",
+              "RelativeToolTip": "Views\\Applications\\Dashboard.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-27T22:43:13.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\Views\\Applications\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Applications\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\Views\\Applications\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Applications\\Delete.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAgwCIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-27T22:43:02.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\Views\\Applications\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Applications\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\Views\\Applications\\Details.cshtml",
+              "RelativeToolTip": "Views\\Applications\\Details.cshtml",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAgwCQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-27T22:42:52.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\Views\\Applications\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Applications\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\Views\\Applications\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Applications\\Edit.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAgwDEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-27T22:42:42.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\Views\\Applications\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Applications\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\Views\\Applications\\Index.cshtml",
+              "RelativeToolTip": "Views\\Applications\\Index.cshtml",
+              "ViewState": "AQIAACAAAAAAAAAAAAAgwDkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-27T22:42:19.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T22:31:53.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\JobApplicationTracker\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T22:23:05.303Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
