@@ -4,33 +4,64 @@
     ViewData["Title"] = "Application Details";
 }
 
-<h2>Application Details</h2>
+<div class="container my-5">
+    <h2 class="text-primary text-center mb-4">Application Details</h2>
 
-<table class="table">
-    <tr>
-        <th>Company Name</th>
-        <td>@Model.CompanyName</td>
-    </tr>
-    <tr>
-        <th>Job Title</th>
-        <td>@Model.JobTitle</td>
-    </tr>
-    <tr>
-        <th>Application Date</th>
-        <td>@Model.ApplicationDate.ToShortDateString()</td>
-    </tr>
-    <tr>
-        <th>Status</th>
-        <td>@Model.Status</td>
-    </tr>
-    <tr>
-        <th>Job Link</th>
-        <td><a href="@Model.JobLink" target="_blank">@Model.JobLink</a></td>
-    </tr>
-    <tr>
-        <th>Notes</th>
-        <td>@Model.Notes</td>
-    </tr>
-</table>
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <table class="table table-borderless table-hover">
+                <tr>
+                    <th class="text-secondary">Company Name</th>
+                    <td class="fw-bold">@Model.CompanyName</td>
+                </tr>
+                <tr>
+                    <th class="text-secondary">Job Title</th>
+                    <td class="fw-bold">@Model.JobTitle</td>
+                </tr>
+                <tr>
+                    <th class="text-secondary">Application Date</th>
+                    <td class="fw-bold">@Model.ApplicationDate.ToShortDateString()</td>
+                </tr>
+                <tr>
+                    <th class="text-secondary">Status</th>
+                    <td>
+                        @if (Model.Status == "Accepted")
+                        {
+                            <span class="badge bg-success">Accepted</span>
+                        }
+                        else if (Model.Status == "Rejected")
+                        {
+                            <span class="badge bg-danger">Rejected</span>
+                        }
+                        else if (Model.Status == "Interviewing")
+                        {
+                            <span class="badge bg-warning text-dark">Interviewing</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-info">Applied</span>
+                        }
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-secondary">Job Link</th>
+                    <td>
+                        <a href="@Model.JobLink" target="_blank" class="text-decoration-none">
+                            <i class="bi bi-box-arrow-up-right"></i> @Model.JobLink
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-secondary">Notes</th>
+                    <td>@Model.Notes</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 
-<a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    <div class="text-center mt-4">
+        <a asp-action="Index" class="btn btn-secondary btn-lg">
+            <i class="bi bi-arrow-left"></i> Back to List
+        </a>
+    </div>
+</div>

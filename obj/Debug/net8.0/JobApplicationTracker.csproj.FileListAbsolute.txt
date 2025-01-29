@@ -138,3 +138,5 @@ C:\Users\Dell\source\repos\JobApplicationTracker\obj\Debug\net8.0\JobApplication
 C:\Users\Dell\source\repos\JobApplicationTracker\obj\Debug\net8.0\ref\JobApplicationTracker.dll
 C:\Users\Dell\source\repos\JobApplicationTracker\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\Dell\source\repos\JobApplicationTracker\obj\Debug\net8.0\JobApplicationTracker.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Dell\source\repos\JobApplicationTracker\obj\Debug\net8.0\JobApplicationTracker.sourcelink.json
+C:\Users\Dell\source\repos\JobApplicationTracker\bin\Debug\net8.0\BCrypt.Net-Next.dll

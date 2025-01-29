@@ -1,5 +1,6 @@
 ﻿using CsvHelper;
 using JobApplicationTracker.Models;
+using JobApplicationTracker.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Globalization;
@@ -38,11 +39,18 @@ namespace JobApplicationTracker.Controllers
         {
             if (ModelState.IsValid)
             {
-                application.UserId = User.Identity.Name;
-                application.CreatedAt = DateTime.Now; 
-                _context.JobApplications.Add(application);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                try
+                {
+                    application.UserId = User.Identity?.Name;
+                    application.CreatedAt = DateTime.Now;
+                    _context.JobApplications.Add(application);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists, see your system administrator.");
+                }
             }
             return View(application);
         }
@@ -97,41 +105,61 @@ namespace JobApplicationTracker.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        public IActionResult Export()
+        public async Task<IActionResult> Details(int? id)
         {
-            var userId = User.Identity.Name;
-            var applications = _context.JobApplications.Where(a => a.UserId == userId).ToList();
-
-            using (var memoryStream = new MemoryStream())
-            using (var writer = new StreamWriter(memoryStream))
-            using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
+            if (id == null)
             {
-                csv.WriteRecords(applications);
-                writer.Flush();
-                return File(memoryStream.ToArray(), "text/csv", "applications.csv");
+                return NotFound();
             }
+
+            // Fetch the job application by ID and ensure it belongs to the current user
+            var application = await _context.JobApplications
+                .FirstOrDefaultAsync(a => a.Id == id && a.UserId == User.Identity.Name);
+
+            if (application == null)
+            {
+                return NotFound();
+            }
+
+            return View(application);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Import(IFormFile file)
-        {
-            if (file != null && file.Length > 0)
-            {
-                using (var stream = file.OpenReadStream())
-                using (var reader = new StreamReader(stream))
-                using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
-                {
-                    var importedApplications = csv.GetRecords<JobApplication>().ToList();
-                    foreach (var app in importedApplications)
-                    {
-                        app.UserId = User.Identity.Name;
-                        _context.JobApplications.Add(app);
-                    }
-                    await _context.SaveChangesAsync();
-                }
-            }
-            return RedirectToAction(nameof(Index));
-        }
+
+        //public IActionResult Export()
+        //{
+        //    var userId = User.Identity.Name;
+        //    var applications = _context.JobApplications.Where(a => a.UserId == userId).ToList();
+
+        //    using (var memoryStream = new MemoryStream())
+        //    using (var writer = new StreamWriter(memoryStream))
+        //    using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
+        //    {
+        //        csv.WriteRecords(applications);
+        //        writer.Flush();
+        //        return File(memoryStream.ToArray(), "text/csv", "applications.csv");
+        //    }
+        //}
+
+        //[HttpPost]
+        //public async Task<IActionResult> Import(IFormFile file)
+        //{
+        //    if (file != null && file.Length > 0)
+        //    {
+        //        using (var stream = file.OpenReadStream())
+        //        using (var reader = new StreamReader(stream))
+        //        using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+        //        {
+        //            var importedApplications = csv.GetRecords<JobApplication>().ToList();
+        //            foreach (var app in importedApplications)
+        //            {
+        //                app.UserId = User.Identity.Name;
+        //                _context.JobApplications.Add(app);
+        //            }
+        //            await _context.SaveChangesAsync();
+        //        }
+        //    }
+        //    return RedirectToAction(nameof(Index));
+        //}
 
         public async Task<IActionResult> Dashboard()
         {

@@ -4,50 +4,91 @@
     ViewData["Title"] = "Add New Application";
 }
 
-<h2>Add New Job Application</h2>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10 col-sm-12">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white text-center py-3">
+                    <h3 class="mb-0">Add New Job Application</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Create" method="post" novalidate>
+                        @Html.AntiForgeryToken()
 
-<form asp-action="Create" method="post">
-    @Html.AntiForgeryToken()
-    <div class="form-group">
-        <label for="CompanyName">Company Name</label>
-        <input asp-for="CompanyName" class="form-control" />
-        <span asp-validation-for="CompanyName" class="text-danger"></span>
+                        <!-- Company Name and Job Title -->
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="CompanyName" class="form-label fw-bold">Company Name</label>
+                                <input asp-for="CompanyName" class="form-control" placeholder="Enter company name" />
+                                <span asp-validation-for="CompanyName" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="JobTitle" class="form-label fw-bold">Job Title</label>
+                                <input asp-for="JobTitle" class="form-control" placeholder="Enter job title" />
+                                <span asp-validation-for="JobTitle" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <!-- Application Date and Status -->
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="ApplicationDate" class="form-label fw-bold">Application Date</label>
+                                <input asp-for="ApplicationDate" type="date" class="form-control" />
+                                <span asp-validation-for="ApplicationDate" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Status" class="form-label fw-bold">Status</label>
+                                <select asp-for="Status" class="form-select">
+                                    <option value="">Select Status</option>
+                                    <option value="Applied">Applied</option>
+                                    <option value="Interviewing">Interviewing</option>
+                                    <option value="Accepted">Accepted</option>
+                                    <option value="Rejected">Rejected</option>
+                                </select>
+                                <span asp-validation-for="Status" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <!-- Job Link -->
+                        <div class="mb-3">
+                            <label asp-for="JobLink" class="form-label fw-bold">Job Link</label>
+                            <input asp-for="JobLink" type="url" class="form-control" placeholder="https://example.com/job-posting" />
+                            <span asp-validation-for="JobLink" class="text-danger"></span>
+                        </div>
+
+                        <!-- Notes -->
+                        <div class="mb-3">
+                            <label asp-for="Notes" class="form-label fw-bold">Notes</label>
+                            <textarea asp-for="Notes" rows="4" class="form-control" placeholder="Enter any additional notes..."></textarea>
+                            <span asp-validation-for="Notes" class="text-danger"></span>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="d-flex justify-content-end mt-4">
+                            <button type="submit" class="btn btn-primary me-2 px-4">
+                                <i class="bi bi-save"></i> Save
+                            </button>
+                            <a asp-action="Index" class="btn btn-secondary px-4">
+                                <i class="bi bi-arrow-left"></i> Back
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="form-group">
-        <label for="JobTitle">Job Title</label>
-        <input asp-for="JobTitle" class="form-control" />
-        <span asp-validation-for="JobTitle" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label for="ApplicationDate">Application Date</label>
-        <input asp-for="ApplicationDate" class="form-control" type="date" />
-        <span asp-validation-for="ApplicationDate" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label for="Status">Status</label>
-        <select asp-for="Status" class="form-control">
-            <option>Applied</option>
-            <option>Interviewing</option>
-            <option>Accepted</option>
-            <option>Rejected</option>
-        </select>
-        <span asp-validation-for="Status" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label for="JobLink">Job Posting Link</label>
-        <input asp-for="JobLink" class="form-control" />
-        <span asp-validation-for="JobLink" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label for="Notes">Notes</label>
-        <textarea asp-for="Notes" class="form-control"></textarea>
-        <span asp-validation-for="Notes" class="text-danger"></span>
-    </div>
-    <button type="submit" class="btn btn-primary">Save</button>
-    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
-</form>
+</div>
+
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+    <!-- Set default date to today -->
+    <script>
+        $(document).ready(function () {
+            if (!$("#ApplicationDate").val()) {
+                $("#ApplicationDate").val(new Date().toISOString().split('T')[0]);
+            }
+        });
+    </script>
 }
