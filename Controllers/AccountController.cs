@@ -70,12 +70,14 @@ namespace JobApplicationTracker.Controllers
 
                 _context.SaveChanges();
 
-                return RedirectToAction("Index", "Home");
+                // Redirect to Dashboard after successful login
+                return RedirectToAction("Dashboard", "Applications");
             }
 
             ModelState.AddModelError("", "Invalid username or password.");
             return View();
         }
+
 
         // ======== LOGOUT ========
         public IActionResult Logout()

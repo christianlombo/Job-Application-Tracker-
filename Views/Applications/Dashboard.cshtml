@@ -5,35 +5,35 @@
 }
 
 <div class="container my-5">
-    <h2 class="text-primary text-center mb-4">Dashboard</h2>
+    <h2 class="text-primary text-center mb-4 fw-bold">Dashboard</h2>
 
     <div class="row g-4 text-center">
         <!-- Total Applications -->
-        <div class="col-md-4">
-            <div class="card shadow-sm border-primary">
+        <div class="col-md-4 col-sm-6">
+            <div class="card shadow-sm border-primary border-2">
                 <div class="card-body">
-                    <h5 class="card-title text-primary">Total Applications</h5>
-                    <p class="display-4 text-primary">@Model.TotalApplications</p>
+                    <h5 class="card-title text-primary fw-bold">Total Applications</h5>
+                    <p class="display-4 text-primary fw-bold">@Model.TotalApplications</p>
                 </div>
             </div>
         </div>
 
         <!-- Accepted Applications -->
-        <div class="col-md-4">
-            <div class="card shadow-sm border-success">
+        <div class="col-md-4 col-sm-6">
+            <div class="card shadow-sm border-success border-2">
                 <div class="card-body">
-                    <h5 class="card-title text-success">Accepted</h5>
-                    <p class="display-4 text-success">@Model.Accepted</p>
+                    <h5 class="card-title text-success fw-bold">Accepted</h5>
+                    <p class="display-4 text-success fw-bold">@Model.Accepted</p>
                 </div>
             </div>
         </div>
 
         <!-- Rejected Applications -->
-        <div class="col-md-4">
-            <div class="card shadow-sm border-danger">
+        <div class="col-md-4 col-sm-6">
+            <div class="card shadow-sm border-danger border-2">
                 <div class="card-body">
-                    <h5 class="card-title text-danger">Rejected</h5>
-                    <p class="display-4 text-danger">@Model.Rejected</p>
+                    <h5 class="card-title text-danger fw-bold">Rejected</h5>
+                    <p class="display-4 text-danger fw-bold">@Model.Rejected</p>
                 </div>
             </div>
         </div>
@@ -41,28 +41,28 @@
 
     <div class="row g-4 text-center mt-4">
         <!-- Interviewing Applications -->
-        <div class="col-md-6">
-            <div class="card shadow-sm border-warning">
+        <div class="col-md-6 col-sm-6">
+            <div class="card shadow-sm border-warning border-2">
                 <div class="card-body">
-                    <h5 class="card-title text-warning">Interviewing</h5>
-                    <p class="display-4 text-warning">@Model.Interviewing</p>
+                    <h5 class="card-title text-warning fw-bold">Interviewing</h5>
+                    <p class="display-4 text-warning fw-bold">@Model.Interviewing</p>
                 </div>
             </div>
         </div>
 
         <!-- Applied Applications -->
-        <div class="col-md-6">
-            <div class="card shadow-sm border-info">
+        <div class="col-md-6 col-sm-6">
+            <div class="card shadow-sm border-info border-2">
                 <div class="card-body">
-                    <h5 class="card-title text-info">Applied</h5>
-                    <p class="display-4 text-info">@Model.Applied</p>
+                    <h5 class="card-title text-info fw-bold">Applied</h5>
+                    <p class="display-4 text-info fw-bold">@Model.Applied</p>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="text-center mt-5">
-        <a asp-action="Index" class="btn btn-primary btn-lg">
+        <a asp-action="Index" class="btn btn-primary btn-lg px-4 py-2 rounded-pill shadow-sm">
             <i class="bi bi-list"></i> View All Applications
         </a>
     </div>
